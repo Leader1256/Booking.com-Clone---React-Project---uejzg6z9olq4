@@ -1,0 +1,62 @@
+.container{
+    display: flex;
+    flex-direction: column;
+    gap:1.5rem;
+}
+.header{
+    color: rgb(71, 71, 240);
+}
+.mainHeader{
+    display: flex;
+    justify-content: space-between;
+
+}
+.flight{
+    display: flex;
+    align-items: center;
+    gap:1rem;
+
+}
+.userName{
+   
+    width:90px;
+    height: 50px;
+    border-radius: 13px;
+    background-color: rgb(209, 203, 203);
+}
+.user{
+     margin-left: 5px;
+}
+.label{
+    margin-right: 10px;
+}
+.allHolder{
+    display: flex;
+    justify-content: center;
+    gap: 5rem;
+}
+.cardList{
+    border:1px solid black;
+    width:35rem;
+    height: 20rem;
+    margin: auto;
+}
+.tableHeader{
+    padding-right: 5rem;
+    padding-bottom: 1.5rem;
+    padding-left: 1rem;
+}
+.tableData{
+    padding-bottom: 3rem;
+    padding-left: 1rem;
+}
+td{
+ text-align:left;
+}
+#btn{
+    width: 100px;
+    height: 40px;
+}
+.inputType{
+    margin-bottom:2rem;
+}
