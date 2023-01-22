@@ -4,7 +4,7 @@ export const HotelDetail=()=>{
     return(
         <div>
             <hr/>
-            <div style={{paddingBottom:"3rem"}}>
+            <div style={{paddingBottom:"3rem", backgroundColor:"orange"}}>
                 <div className="inputType">
                 <label htmlFor="room" className="label">Room Type</label>
                 <select >

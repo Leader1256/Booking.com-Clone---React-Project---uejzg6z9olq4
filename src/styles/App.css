@@ -1,4 +1,4 @@
-.container{
+.container1{
     display: flex;
     flex-direction: column;
     gap:1.5rem;
@@ -9,7 +9,12 @@
 .mainHeader{
     display: flex;
     justify-content: space-between;
+    background: linear-gradient(45deg, black, transparent);
+}
 
+#AvailableHot{
+  background-color: darkkhaki;
+  margin-top: -15px;
 }
 .flight{
     display: flex;
@@ -40,11 +45,13 @@
     width:35rem;
     height: 20rem;
     margin: auto;
+    background: cornsilk;
 }
 .tableHeader{
     padding-right: 5rem;
     padding-bottom: 1.5rem;
     padding-left: 1rem;
+    padding-top: 11px;
 }
 .tableData{
     padding-bottom: 3rem;
@@ -56,7 +63,179 @@ td{
 #btn{
     width: 100px;
     height: 40px;
+    margin-top: 12px;
+    border-radius: 10px;
+    background-color: rgb(145, 170, 22);
+    font-weight: 900;
 }
 .inputType{
     margin-bottom:2rem;
 }
+#name{
+    margin-left: 19px;
+    width: 18rem;
+    height: 2rem;
+    font-weight: 900;
+    font-size: 1rem;
+    border: 1px solid grey;
+    border-radius: 5px;
+    margin-bottom: 1.5rem;
+}
+#email{
+    margin-left: 19px;
+    width: 18rem;
+    height: 2rem;
+    font-weight: 900;
+    font-size: 1rem;
+    border: 1px solid grey;
+    border-radius: 5px;
+    margin-bottom: 1.5rem;
+}
+#password{
+    margin-left: 5rem;
+    width: 18rem;
+    height: 2rem;
+    font-weight: 900;
+    font-size: 1rem;
+    border: 1px solid grey;
+    border-radius: 5px;
+    margin-bottom: 1.5rem;
+}
+#passwordc{
+    margin-left: 19px;
+    width: 18rem;
+    height: 2rem;
+    font-weight: 900;
+    font-size: 1rem;
+    border: 1px solid grey;
+    border-radius: 5px;
+    margin-bottom: 1.5rem;
+}
+label{
+    font-size: 1.5rem;
+    font-weight: bolder;
+}
+
+.dropdown-menu{
+    width:fit-content;
+    border: 1px solid grey;
+    border-radius: 10px;
+    padding: 2rem;
+    margin: auto;
+    margin-top: 8rem;
+    background-color: antiquewhite;
+
+}
+
+.btn{
+    width: 19rem;
+    height: 2rem;
+    background: rgb(219, 94, 11);
+    font-size: 22px;
+    border: 1px solid rgb(37, 23, 13);
+    border-radius: 10px;
+    margin-left: 4.3rem;
+    color: aliceblue;
+}
+ul{
+    display: flex;
+    justify-content: flex-start;
+    gap:2rem;
+  
+    
+}
+.cardItems{
+    margin-left: 12rem;
+    margin-bottom: 2rem;
+}
+li{
+    list-style: none;
+
+}
+li:hover{
+    cursor: pointer;
+}
+.headerList{
+    background-color: aquamarine;
+}
+
+
+
+
+
+
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 0;
+  }
+  
+  html {
+    box-sizing: border-box;
+  }
+  
+  *, *:before, *:after {
+    box-sizing: inherit;
+  }
+  
+  .column {
+    float: left;
+    width: 44rem;
+    margin-bottom: 16px;
+    padding: 0 8px;
+    
+  }
+  
+  .card {
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    margin: 8px;
+  }
+  .cardAlign{
+    display:flex;
+    justify-content: center;
+  }
+  .about-section {
+    padding: 50px;
+    text-align: center;
+    background-color: #474e5d;
+    color: white;
+    margin-bottom: 1.5rem;
+  }
+  
+  .container {
+    padding: 0 16px;
+    text-align: center;
+  }
+  
+  .container::after, .row::after {
+    content: "";
+    clear: both;
+    display: table;
+  }
+  
+  .title {
+    color: grey;
+  }
+  
+  .button {
+    border: none;
+    outline: 0;
+    display: inline-block;
+    padding: 8px;
+    color: white;
+    background-color: #000;
+    text-align: center;
+    cursor: pointer;
+    width: 100%;
+  }
+  
+  .button:hover {
+    background-color: #555;
+  }
+  
+  @media screen and (max-width: 650px) {
+    .column {
+      width: 100%;
+      display: block;
+    }
+  }

@@ -2,9 +2,9 @@ import React from "react";
 import '../styles/App.css';
  export const AvailableHotelList=()=>{
     return (
-        <div>
-            <h1 className="title">Available Hoptels</h1>
-            <div className="container">
+        <div id="AvailableHot">
+            <h1 className="title">Available Hotels</h1>
+            <div className="container1">
             <div className="cardList">
                 <tr>
                 <th className="tableHeader">
@@ -44,18 +44,19 @@ import '../styles/App.css';
                  RATING
                 </th>
                 <th className="tableHeader">
-                 
-                </th>
-                <th className="tableHeader">
                  GEUST
                 </th>
+                <th className="tableHeader">
+                 
+                </th>
+               
                 </tr>
                 <tr>
                     <td className="tableData">9.6</td>
-                    <td className="tableData"></td>
                     <td className="tableData">2</td>
+                    <td className="tableData">Book</td>
                  </tr>
-                
+               
             </div>
             <div className="cardList">
                 <tr>
@@ -266,7 +267,7 @@ import '../styles/App.css';
                     <td className="tableData">2</td>
                  </tr>
         
-        
+       
             </div>
             </div>
         </div>
