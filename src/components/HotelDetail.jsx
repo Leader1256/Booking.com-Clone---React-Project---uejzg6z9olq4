@@ -104,7 +104,7 @@ export const HotelDetail=({loc,date,datetime,geust})=>{
                  GEUST
                 </th>
                 <th className="tableHeader">
-                <button id="Bookbtn">Book</button>
+                <button id="Bookbtn" onClick={clickBook}>Book</button>
                 </th>
                
                 </tr>
@@ -158,7 +158,7 @@ export const HotelDetail=({loc,date,datetime,geust})=>{
                  GEUST
                 </th>
                 <th className="tableHeader">
-                <button id="Bookbtn">Book</button>
+                <button id="Bookbtn" onClick={clickBook}>Book</button>
                 </th>
                
                 </tr>
@@ -212,7 +212,7 @@ export const HotelDetail=({loc,date,datetime,geust})=>{
                  GEUST
                 </th>
                 <th className="tableHeader">
-                <button id="Bookbtn">Book</button>
+                <button id="Bookbtn" onClick={clickBook}>Book</button>
                 </th>
                
                 </tr>
@@ -266,7 +266,7 @@ export const HotelDetail=({loc,date,datetime,geust})=>{
                  GEUST
                 </th>
                 <th className="tableHeader">
-                <button id="Bookbtn">Book</button>
+                <button id="Bookbtn" onClick={clickBook}>Book</button>
                 </th>
                
                 </tr>
