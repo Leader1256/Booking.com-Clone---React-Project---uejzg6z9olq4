@@ -15,7 +15,7 @@ export const FrontPage=()=>{
             <li style={{marginLeft:"12rem"}}><h2>Home</h2></li>
             <li><h2><a href="#ourTeam" style={{textDecoration:"none" ,color:"black"}}>About Us</a></h2></li>
             <li><h2><a href="#ourContact" style={{textDecoration:"none",color:"black"}}>Contact</a></h2></li>
-            <li><button onClick={clickbtn} style={{marginLeft: "12rem",border: "1px solid gold",borderRadius: "10px",backgroundColor: "rgb(0 175 0)"}} ><h3  >Sign Up</h3></button></li>
+            <li><button onClick={clickbtn} style={{marginLeft: "12rem",border: "1px solid gold",borderRadius: "10px",backgroundColor: "rgb(0 175 0)",marginTop:"11px"}} ><h3>Sign Up</h3></button></li>
           </ul>
         </div>
         <div className="cardItems">

@@ -6,7 +6,7 @@ export const ProjectBody=()=>{
     return (
         <div>
       <NavHeader/>
-      <HotelDetail/>
+      
       <AvailableHotelList/>
         </div>
     )

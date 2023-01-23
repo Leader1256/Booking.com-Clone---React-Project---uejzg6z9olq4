@@ -46,6 +46,24 @@
     height: 20rem;
     margin: auto;
     background: cornsilk;
+    border-radius: 10px;
+}
+#slider{
+  width:auto;
+  background-color: rgb(6, 146, 6);
+  color:#000;
+  font-weight: 900;
+  height: 3rem;
+    text-align: center;
+    padding-top: 10px;
+    font-size: 24px;
+}
+#Bookbtn{
+  width: 90px;
+  border-radius: 10px;
+  height: 38px;
+  background: darkorange;
+  font-weight: 900;
 }
 .tableHeader{
     padding-right: 5rem;
@@ -60,7 +78,9 @@
 td{
  text-align:left;
 }
+
 #btn{
+    cursor: pointer;
     width: 100px;
     height: 40px;
     margin-top: 12px;
@@ -159,6 +179,37 @@ li:hover{
     background-color: aquamarine;
 }
 
+#location{
+  width: 183px;
+    font-size: 24px;
+    height: 40px;
+    border-radius: 10px;
+}
+#date{
+  width: 183px;
+    font-size: 24px;
+    height: 40px;
+    border-radius: 10px;
+}
+#datetime{
+  width: 183px;
+    font-size: 24px;
+    height: 40px;
+    border-radius: 10px;
+}
+#guest{
+  width: 183px;
+    font-size: 24px;
+    height: 40px;
+    border-radius: 10px;
+}
+#selectType{
+  width: 100px;
+  font-size: 24px;
+  height: 30px;
+  border-radius: 10px;
+}
+
 
 
 
@@ -214,7 +265,7 @@ body {
   }
   
   .title {
-    color: grey;
+    color: rgb(69, 67, 67);
   }
   
   .button {

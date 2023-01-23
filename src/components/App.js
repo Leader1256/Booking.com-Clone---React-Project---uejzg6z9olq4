@@ -5,6 +5,7 @@ import { BrowserRouter, Routes, Route } from 'react-router-dom';
 import { ProjectBody } from './ProjectBody';
 import {SignUpPage} from './SignUpPage';
 import { FrontPage } from './FrontPage';
+import { BookInfo } from './BookInfo';
 const App = () => {
 
 
@@ -17,7 +18,7 @@ const App = () => {
          <Route path='/' element={<FrontPage/>} />
         <Route  path='/home' element={<ProjectBody/>} />
         <Route  path='/signUp' element={<SignUpPage/>} />
-       
+       <Route path='/book' element={<BookInfo/>} />
       </Routes>
       </BrowserRouter>
     </div>
