@@ -2,11 +2,13 @@ import React from "react";
 import '../styles/App.css';
 import { useState } from "react";
 import { HotelDetail } from './HotelDetail';
+import { BookInfo } from "./BookInfo";
  export const AvailableHotelList=()=>{
     const [loc,setLoc]=useState("");
     const [date,setDate]=useState("");
     const [datetime,setDateTime]=useState("");
     const [geust,setGeust]=useState("");
+    const [room,setRoom]=useState(1);
      const [loader,setLoader]=useState(false);
     const locationF=(e)=>{
         setLoc(e.target.value);
@@ -16,18 +18,22 @@ import { HotelDetail } from './HotelDetail';
     }
     const datetimeF =(e)=>{
         setDateTime(e.target.value);
+        console.log("datetome");
     }
     const geustF=(e)=>{
         setGeust(e.target.value);
     }
  
+    const selectF=(e)=>{
+        setRoom(e.target.value);
+    }
     return (
         <div id="AvailableHot">
              <hr/>
             <div style={{paddingBottom:"3rem", backgroundColor:"orange"}}>
                 <div className="inputType">
                 <label htmlFor="room" className="label">Room Type</label>
-                <select id="selectType">
+                <select id="selectType" onChange={selectF}>
                     <option>Single</option>
                     <option>Double</option>
                     <option>luxirous</option>
@@ -70,219 +76,9 @@ import { HotelDetail } from './HotelDetail';
             <hr/>
             <h1 className="title">Available Hotels</h1>
             <div className="container1"> 
-            {loader?(<HotelDetail loc={loc} date={date} datetime={datetime} geust={geust}/> && <HotelDetail loc={loc} date={date} datetime={datetime} geust={geust}/>):""}
-            {/* <div className="cardList">
-                <tr>
-                <th className="tableHeader">
-                 HOTEL
-                </th>
-                <th className="tableHeader">
-                 CHECK-IN
-                </th>
-                <th className="tableHeader">
-                 PRICE
-                </th>
-                </tr>
-               
-                <tr>
-                    <td className="tableData">Bushan Hotel</td>
-                    <td className="tableData">12-12-1222</td>
-                    <td className="tableData">1200/-</td>
-                </tr>
-                <tr>
-                <th className="tableHeader">
-                 CITY
-                </th>
-                <th className="tableHeader">
-                 CHECK-OUT
-                </th>
-                <th className="tableHeader">
-                 ROOMS
-                </th>
-                </tr>
-                <tr>
-                    <td className="tableData">GOA</td>
-                    <td className="tableData">12-12-1222</td>
-                    <td className="tableData">Double</td>
-                 </tr>
-                 <tr>
-                <th className="tableHeader">
-                 RATING
-                </th>
-                <th className="tableHeader">
-                 
-                </th>
-                <th className="tableHeader">
-                 GEUST
-                </th>
-                </tr>
-                <tr>
-                    <td className="tableData">9.6</td>
-                    <td className="tableData"></td>
-                    <td className="tableData">2</td>
-                 </tr>
-    
-            </div>
-            <div className="cardList">
-                <tr>
-                <th className="tableHeader">
-                 HOTEL
-                </th>
-                <th className="tableHeader">
-                 CHECK-IN
-                </th>
-                <th className="tableHeader">
-                 PRICE
-                </th>
-                </tr>
-               
-                <tr>
-                    <td className="tableData">Bushan Hotel</td>
-                    <td className="tableData">12-12-1222</td>
-                    <td className="tableData">1200/-</td>
-                </tr>
-                <tr>
-                <th className="tableHeader">
-                 CITY
-                </th>
-                <th className="tableHeader">
-                 CHECK-OUT
-                </th>
-                <th className="tableHeader">
-                 ROOMS
-                </th>
-                </tr>
-                <tr>
-                    <td className="tableData">GOA</td>
-                    <td className="tableData">12-12-1222</td>
-                    <td className="tableData">Double</td>
-                 </tr>
-                 <tr>
-                <th className="tableHeader">
-                 RATING
-                </th>
-                <th className="tableHeader">
-                 
-                </th>
-                <th className="tableHeader">
-                 GEUST
-                </th>
-                </tr>
-                <tr>
-                    <td className="tableData">9.6</td>
-                    <td className="tableData"></td>
-                    <td className="tableData">2</td>
-                 </tr>
-        
-        
-            </div>
-            <div className="cardList">
-                <tr>
-                <th className="tableHeader">
-                 HOTEL
-                </th>
-                <th className="tableHeader">
-                 CHECK-IN
-                </th>
-                <th className="tableHeader">
-                 PRICE
-                </th>
-                </tr>
-               
-                <tr>
-                    <td className="tableData">Bushan Hotel</td>
-                    <td className="tableData">12-12-1222</td>
-                    <td className="tableData">1200/-</td>
-                </tr>
-                <tr>
-                <th className="tableHeader">
-                 CITY
-                </th>
-                <th className="tableHeader">
-                 CHECK-OUT
-                </th>
-                <th className="tableHeader">
-                 ROOMS
-                </th>
-                </tr>
-                <tr>
-                    <td className="tableData">GOA</td>
-                    <td className="tableData">12-12-1222</td>
-                    <td className="tableData">Double</td>
-                 </tr>
-                 <tr>
-                <th className="tableHeader">
-                 RATING
-                </th>
-                <th className="tableHeader">
-                 
-                </th>
-                <th className="tableHeader">
-                 GEUST
-                </th>
-                </tr>
-                <tr>
-                    <td className="tableData">9.6</td>
-                    <td className="tableData"></td>
-                    <td className="tableData">2</td>
-                 </tr>
-        
-        
-            </div>
-            <div className="cardList">
-                <tr>
-                <th className="tableHeader">
-                 HOTEL
-                </th>
-                <th className="tableHeader">
-                 CHECK-IN
-                </th>
-                <th className="tableHeader">
-                 PRICE
-                </th>
-                </tr>
-               
-                <tr>
-                    <td className="tableData">Bushan Hotel</td>
-                    <td className="tableData">12-12-1222</td>
-                    <td className="tableData">1200/-</td>
-                </tr>
-                <tr>
-                <th className="tableHeader">
-                 CITY
-                </th>
-                <th className="tableHeader">
-                 CHECK-OUT
-                </th>
-                <th className="tableHeader">
-                 ROOMS
-                </th>
-                </tr>
-                <tr>
-                    <td className="tableData">GOA</td>
-                    <td className="tableData">12-12-1222</td>
-                    <td className="tableData">Double</td>
-                 </tr>
-                 <tr>
-                <th className="tableHeader">
-                 RATING
-                </th>
-                <th className="tableHeader">
-                 
-                </th>
-                <th className="tableHeader">
-                 GEUST
-                </th>
-                </tr>
-                <tr>
-                    <td className="tableData">9.6</td>
-                    <td className="tableData"></td>
-                    <td className="tableData">2</td>
-                 </tr>
-        
-       
-            </div> */}
-            </div>
+            {loader?(<HotelDetail loc={loc} date={date} datetime={datetime} geust={geust} selectRoom={room}/>):""}
+            </div><BookInfo loc={loc} date={date}/>
+          
         </div>
     )
 }

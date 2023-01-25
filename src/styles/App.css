@@ -48,6 +48,25 @@
     background: cornsilk;
     border-radius: 10px;
 }
+#liHome{
+  margin-left: 13rem;
+
+}
+#liHome:hover{
+  background-color: rgb(167, 103, 20);
+}
+#liAbout{
+ 
+}
+#liAbout:hover{
+  background-color: rgb(167, 103, 20);
+}
+#liContact{
+ 
+}
+#liContact:hover{
+  background-color: rgb(167, 103, 20);
+}
 #slider{
   width:auto;
   background-color: rgb(6, 146, 6);

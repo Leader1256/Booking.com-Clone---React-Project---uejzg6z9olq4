@@ -1,7 +1,7 @@
 import React from "react";
 import '../styles/App.css';
 import { useNavigate } from "react-router-dom";
-export const HotelDetail=({loc,date,datetime,geust})=>{
+export const HotelDetail=({loc,date,datetime,geust,selectRoom})=>{
     const navigating=useNavigate();
     const clickBook=()=>{
       navigating('/book');
@@ -40,7 +40,7 @@ export const HotelDetail=({loc,date,datetime,geust})=>{
                 <tr>
                     <td className="tableData">{loc}</td>
                     <td className="tableData">{datetime}</td>
-                    <td className="tableData"></td>
+                    <td className="tableData">{selectRoom}</td>
                  </tr>
                  <tr>
                 <th className="tableHeader">
@@ -94,7 +94,7 @@ export const HotelDetail=({loc,date,datetime,geust})=>{
                 <tr>
                     <td className="tableData">{loc}</td>
                     <td className="tableData">{datetime}</td>
-                    <td className="tableData"></td>
+                    <td className="tableData">{selectRoom}</td>
                  </tr>
                  <tr>
                 <th className="tableHeader">
@@ -148,7 +148,7 @@ export const HotelDetail=({loc,date,datetime,geust})=>{
                 <tr>
                     <td className="tableData">{loc}</td>
                     <td className="tableData">{datetime}</td>
-                    <td className="tableData"></td>
+                    <td className="tableData">{selectRoom}</td>
                  </tr>
                  <tr>
                 <th className="tableHeader">
@@ -202,7 +202,7 @@ export const HotelDetail=({loc,date,datetime,geust})=>{
                 <tr>
                     <td className="tableData">{loc}</td>
                     <td className="tableData">{datetime}</td>
-                    <td className="tableData"></td>
+                    <td className="tableData">{selectRoom}</td>
                  </tr>
                  <tr>
                 <th className="tableHeader">
@@ -256,7 +256,7 @@ export const HotelDetail=({loc,date,datetime,geust})=>{
                 <tr>
                     <td className="tableData">{loc}</td>
                     <td className="tableData">{datetime}</td>
-                    <td className="tableData"></td>
+                    <td className="tableData">{selectRoom}</td>
                  </tr>
                  <tr>
                 <th className="tableHeader">

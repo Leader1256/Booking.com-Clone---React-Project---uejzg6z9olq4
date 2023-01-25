@@ -25,13 +25,13 @@ export const SignUpPage=()=>{
 
   }
     return(
-      <div>
+      <div style={{backgroundColor:"GrayText",height:"40rem"}}>
         <div className="headerList">
           <ul>
             <li> <h2 className="header">Booking.Com</h2></li>
-            <li style={{marginLeft:"12rem"}}><h2>Home</h2></li>
-            <li><h2><a href="#ourTeam" style={{textDecoration:"none" ,color:"black"}}>About Us</a></h2></li>
-            <li><h2><a href="#ourContact" style={{textDecoration:"none",color:"black"}}>Contact</a></h2></li>
+            <li id="liHome" style={{marginLeft:"12rem"}}><h2>Home</h2></li>
+            <li id="liAbout"><h2><a href="#ourTeam" style={{textDecoration:"none" ,color:"black"}}>About Us</a></h2></li>
+            <li id="liContact"><h2><a href="#ourContact" style={{textDecoration:"none",color:"black"}}>Contact</a></h2></li>
           </ul>
         </div>
         <div className="dropdown-menu">
