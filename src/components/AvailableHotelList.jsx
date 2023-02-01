@@ -77,8 +77,7 @@ import { BookInfo } from "./BookInfo";
             <h1 className="title">Available Hotels</h1>
             <div className="container1"> 
             {loader?(<HotelDetail loc={loc} date={date} datetime={datetime} geust={geust} selectRoom={room}/>):""}
-            </div><BookInfo loc={loc} date={date}/>
-          
+            </div>
         </div>
     )
 }
